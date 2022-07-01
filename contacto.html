@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="noramlize.css">
+    <title>Front-End Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo"  src="img/logo.png" alt="logotipo" class="logo">
+        </a>
+    </header>
+    <nav class="navegación">
+        <a class="navegación__enlace navegación__enlace" href="index.html">Tienda</a>
+        <a class="navegación__enlace navegación__enlace" href="nosotros.html">Sobre Nosotros</a>
+        <a class="navegación__enlace navegación__enlace--activo" href="contacto.html">Contacto</a>
+    </nav>
+    <main class="container">
+       <h1>Sigamos en contacto</h1>
+       <form class="form-contacto">
+           <div class="form-contacto__email">
+            <label for="email">Ingrese su Email</label>
+            <input type="email" id="email" required>
+           </div>
+           
+           <div class="form-contacto__nombre" >
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" id="nombre" required>
+           </div>
+
+           <div class="form-contacto__telefono">
+            <label for="telefono">Ingrese su numero</label>
+            <input type="tel" id="telefono">
+           </div>
+
+           <div class="form-contacto__edad">
+               <label for="edad">Ingrese su edad</label>
+               <input type="number" id="edad" min="1">
+           </div>
+
+           <div class="form-contacto__textarea">
+            <label for="textarea">Ayudenos a mejorar</label>
+            <textarea  id="textarea"></textarea>
+           </div>
+
+           <div class="form-contacto__submit">
+            <input type="submit" value="enviar">
+           </div>
+       </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Todos los derechos reservados© - FrontEnd Store</p>
+    </footer>
+</body>
+</html>
